@@ -69,8 +69,7 @@ ID=1300. An XML string containing all of the Color Presets that are configured i
 **Color Active Presets**
 ID=1301. An XML string containing all of the presets that are currently active. For UI use only.
 
- **Example**
-
+ ** See example to the right**
 ```xml
 <active_presets>
    <preset>
@@ -89,7 +88,7 @@ In the example to the right, the origin value indicates if the preset came from 
 ID=6661. An XML string containing the active dynamic capabilities for this light proxy. For UI use Only.
 
 
-** Example**
+** See example to the right**
 
 ```xml
 <DynamicCapabilities>
@@ -111,3 +110,11 @@ ID=6661. An XML string containing the active dynamic capabilities for this light
   <hold_rate_max>86400000</hold_rate_max>
 </DynamicCapabilities>
 ```
+
+
+**VAR\_C4\_NESTING\_PARENTS\_CHILD\_DEVICES**
+Set this variable to a comma delimited list of ID values for the secondary device(s) required by the parent driver. This list represents the drivers that will be nested under the parent driver in Composer Pro. This is the associated driver(s) with the nested\_driver\_is\_child capability set to true.
+
+
+**VAR\_C4\_NESTED\_CHILDS\_PARENT\_DEVICE** 
+Set the variable to the ID of primary driver requiring its use. This is the associated driver with the nesting\_driver\_is\_parent capability set to true.
