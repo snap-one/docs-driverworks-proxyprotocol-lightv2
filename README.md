@@ -1,2 +1,3 @@
-# docs-driverworks-proxyprotocol-lightv2
- Light Proxy SDK documentation
+# Driverworks Proxy/Protocol Guide - lightv2
+
+Light Proxy SDK documentation
