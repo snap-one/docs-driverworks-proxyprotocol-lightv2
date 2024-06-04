@@ -738,36 +738,6 @@
             <a href="#light-v2-extras-interface-library" class="toc-h1 toc-link" data-title="Light V2 Extras Interface Library">Light V2 Extras Interface Library</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-overview" class="toc-h2 toc-link" data-title="Overview">Overview</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-capabilities" class="toc-h2 toc-link" data-title="Capabilities">Capabilities</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-protocol-notify-and-proxy-messages" class="toc-h2 toc-link" data-title="Protocol Notify and Proxy Messages">Protocol Notify and Proxy Messages</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-extras-setup-changed" class="toc-h2 toc-link" data-title="EXTRAS SETUP CHANGED">EXTRAS SETUP CHANGED</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-signature" class="toc-h2 toc-link" data-title="Signature">Signature</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-returns" class="toc-h2 toc-link" data-title="Returns">Returns</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-extras-state-changed" class="toc-h2 toc-link" data-title="EXTRAS STATE CHANGED">EXTRAS STATE CHANGED</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-signature" class="toc-h2 toc-link" data-title="Signature">Signature</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-returns" class="toc-h2 toc-link" data-title="Returns">Returns</a>
-                  </li>
-                  <li>
-                    <a href="#light-v2-extras-interface-library-preset_level-how-ui-39-s-handle-extras-objects" class="toc-h2 toc-link" data-title="How UI's handle Extras objects">How UI's handle Extras objects</a>
-                  </li>
-                  <li>
                     <a href="#light-v2-extras-interface-library-preset_level-extras-setup-changed" class="toc-h2 toc-link" data-title="EXTRAS SETUP CHANGED">EXTRAS SETUP CHANGED</a>
                   </li>
                   <li>
@@ -5525,74 +5495,9 @@ The light level of the light has changed and is at the final brightness. Event I
 <h3 id='light-v2-protocol-notifications-preset_level-returns'>Returns</h3>
 
 <p><code>None</code></p>
-<p><h1 id='light-v2-extras-interface-library'>Light V2 Extras Interface Library</h1><h3 id='light-v2-extras-interface-library-preset_level-overview'>Overview</h3>
-<p>Extras are a way for driver developers to expose unique hardware functionality that users can interact with on a UI/Navigator.  This functionality bypasses the need for a proxy to know about the unique features and how to handle them.  A protocol driver notify is used to pass the Extras XML information from the protocol driver to the proxy, where the proxy caches the xml strings for current setup and state information. The UI  uses a UI_REQUEST as needed to get the information if the UI has just rebooted/started/loaded and then the UI will get updates of these xml strings if it is listening for dataToUI&#39;s from the device.  Extras objects are accessible through the &quot;Extras Tab&quot; located on the main Navigator screen for the Proxy.</p>
-<h3 id='light-v2-extras-interface-library-preset_level-capabilities'>Capabilities</h3>
-<p>The has_extras capability must be set to true to support the use of Extras. The library will automatically (via dynamic capability) set the has_extras capability when a first Section is created. Also, when the last section is removed, the has_extras capability will be disabled. The Extras class does not implement class destructor as it is not supported in Lua 5.1 and Lua JIT. In the case of setting the Extras class instance to nil, the Extras:cleanCapability() method should be called previously.</p>
-<h3 id='light-v2-extras-interface-library-preset_level-protocol-notify-and-proxy-messages'>Protocol Notify and Proxy Messages</h3>
-<p>There are two notifies a driver must make to the proxy where this information is forwarded immediately to any UI&#39;s listening for dataToUI on the proxy and the information is also cached for future UI&#39;s to request: EXTRAS_SETUP_CHANGED and EXTRAS_STATE_CHANGED.  </p></p>
+<h1 id='light-v2-extras-interface-library'>Light V2 Extras Interface Library</h1>
 
-<p>Whenever a driver changes values that are reflected in either the setup or state xml, it must make the notify to the proxy with the updated information.  This includes if hardware or a feature is added or removed, a value for one of the objects was updated, and so on.  </p>
-
-<p>It is also advisable for protocol drivers to send this data either on initialization of the driver if the values are not likely to change when hardware comes online, or perhaps when the hardware comes online and the extras commands will be able to succeed.  </p>
-
-<p>In addition, it could be advisable that the state of objects is changed to hidden when hardware and/or disabled features are not available rather than sending new extras_setup notifies as this may cause a UI to redraw the extras page and reset defaults while a user is interacting with the Extras page on a UI.</p>
-
-<h3 id='light-v2-extras-interface-library-preset_level-extras-setup-changed'>EXTRAS SETUP CHANGED</h3>
-
-<p>Update the Extras Setup, displayed in the UI </p>
-
-<h3 id='light-v2-extras-interface-library-preset_level-signature'>Signature</h3>
-
-<p><code>EXTRAS_SETUP_CHANGED ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>XML</td>
-<td>XML text string of XML matching the Preset Schedule schema. Comes through to the UI as <code>extras_setup</code>. Note that as of OS 3, sending only a singular XML string is supported. For example, sending an array of Extras can result in Navigator performance issues.</td>
-</tr>
-</tbody></table>
-
-<h3 id='light-v2-extras-interface-library-preset_level-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='light-v2-extras-interface-library-preset_level-extras-state-changed'>EXTRAS STATE CHANGED</h3>
-
-<p>Update the Extras Setup, displayed in the UI </p>
-
-<h3 id='light-v2-extras-interface-library-preset_level-signature'>Signature</h3>
-
-<p><code>EXTRAS_STATE_CHANGED ()</code></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>XML</td>
-<td>XML text string of XML matching the Preset Schedule schema. To UI comes through as <code>extras_state</code>.</td>
-</tr>
-</tbody></table>
-
-<h3 id='light-v2-extras-interface-library-preset_level-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='light-v2-extras-interface-library-preset_level-how-ui-39-s-handle-extras-objects'>How UI&#39;s handle Extras objects</h3>
-
-<p>UI&#39;s will display objects in the order they are read in the EXTRAS_SETUP xml.  If an object needs to have a default selection, number or string, the UI looks at the value attribute for the default.  If no value is specified in the EXTRAS_SETUP the UI will default to a behavior listed below for each object type.</p>
-
-<p>When a user changes a value on a UI, the UI will immediately send the command associated with that object down to a protocol driver as a command.  The UI waits for a response that the protocol driver has handled the command and the protocol driver must send an updated EXTRAS_STATE notify for the object.  </p>
-
-<p>The EXTRAS_STATE does not need to include all states of all objects, only the states of the objects it wants to update (or acknowledged) it has received but it could contain more than just one objects updated state.  A driver could also respond back with just the <code>&lt;extras_state&gt;&lt;extra&gt;&lt;object id=&quot;1&quot;&gt;&lt;/extra&gt;&lt;/extras_state&gt;</code> if it wanted to acknowledge the command succeeded but not update the value.  If a UI that sent the command does not get a response in 10 seconds, it will change the value of the object back to what it was prior to what the user had changed it from.</p>
+<p>For more information regarding the use of the Light Proxy Extras Interface, please see:</p>
 
 <h3 id='light-v2-extras-interface-library-preset_level-extras-setup-changed'>EXTRAS SETUP CHANGED</h3>
 
