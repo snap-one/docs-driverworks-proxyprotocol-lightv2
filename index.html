@@ -768,6 +768,24 @@
                     <a href="#light-v2-extras-interface-library-preset_level-how-ui-39-s-handle-extras-objects" class="toc-h2 toc-link" data-title="How UI's handle Extras objects">How UI's handle Extras objects</a>
                   </li>
                   <li>
+                    <a href="#light-v2-extras-interface-library-preset_level-extras-setup-changed" class="toc-h2 toc-link" data-title="EXTRAS SETUP CHANGED">EXTRAS SETUP CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#light-v2-extras-interface-library-preset_level-signature" class="toc-h2 toc-link" data-title="Signature">Signature</a>
+                  </li>
+                  <li>
+                    <a href="#light-v2-extras-interface-library-preset_level-returns" class="toc-h2 toc-link" data-title="Returns">Returns</a>
+                  </li>
+                  <li>
+                    <a href="#light-v2-extras-interface-library-preset_level-extras-state-changed" class="toc-h2 toc-link" data-title="EXTRAS STATE CHANGED">EXTRAS STATE CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#light-v2-extras-interface-library-preset_level-signature" class="toc-h2 toc-link" data-title="Signature">Signature</a>
+                  </li>
+                  <li>
+                    <a href="#light-v2-extras-interface-library-preset_level-returns" class="toc-h2 toc-link" data-title="Returns">Returns</a>
+                  </li>
+                  <li>
                     <a href="#light-v2-extras-interface-library-extras-class" class="toc-h2 toc-link" data-title="Extras Class">Extras Class</a>
                   </li>
                   <li>
@@ -5575,6 +5593,54 @@ The light level of the light has changed and is at the final brightness. Event I
 <p>When a user changes a value on a UI, the UI will immediately send the command associated with that object down to a protocol driver as a command.  The UI waits for a response that the protocol driver has handled the command and the protocol driver must send an updated EXTRAS_STATE notify for the object.  </p>
 
 <p>The EXTRAS_STATE does not need to include all states of all objects, only the states of the objects it wants to update (or acknowledged) it has received but it could contain more than just one objects updated state.  A driver could also respond back with just the <code>&lt;extras_state&gt;&lt;extra&gt;&lt;object id=&quot;1&quot;&gt;&lt;/extra&gt;&lt;/extras_state&gt;</code> if it wanted to acknowledge the command succeeded but not update the value.  If a UI that sent the command does not get a response in 10 seconds, it will change the value of the object back to what it was prior to what the user had changed it from.</p>
+
+<h3 id='light-v2-extras-interface-library-preset_level-extras-setup-changed'>EXTRAS SETUP CHANGED</h3>
+
+<p>Update the Extras Setup, displayed in the UI </p>
+
+<h3 id='light-v2-extras-interface-library-preset_level-signature'>Signature</h3>
+
+<p><code>EXTRAS_SETUP_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>XML</td>
+<td>XML text string of XML matching the Preset Schedule schema. Comes through to the UI as <code>extras_setup</code>. Note that as of OS 3, sending only a singular XML string is supported. For example, sending an array of Extras can result in Navigator performance issues.</td>
+</tr>
+</tbody></table>
+
+<h3 id='light-v2-extras-interface-library-preset_level-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='light-v2-extras-interface-library-preset_level-extras-state-changed'>EXTRAS STATE CHANGED</h3>
+
+<p>Update the Extras Setup, displayed in the UI </p>
+
+<h3 id='light-v2-extras-interface-library-preset_level-signature'>Signature</h3>
+
+<p><code>EXTRAS_STATE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>XML</td>
+<td>XML text string of XML matching the Preset Schedule schema. To UI comes through as <code>extras_state</code>.</td>
+</tr>
+</tbody></table>
+
+<h3 id='light-v2-extras-interface-library-preset_level-returns'>Returns</h3>
+
+<p><code>None</code></p>
 
 <h2 id='light-v2-extras-interface-library-extras-class'>Extras Class</h2><h3 id='light-v2-extras-interface-library-extras-class-overview'>Overview</h3>
 <p>This class provides an interface between instances of the ExtrasObjectBasedClass. This class can cover following use cases:</p>
