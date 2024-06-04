@@ -15,14 +15,14 @@ This class provides an interface between instances of the ExtrasObjectBasedClass
 
  Structure that contains all fields needed to initialize ExtrasObject instance
 
-|Field Name|Field Type|
-|---|---|
-|id|string|
-|command|string|
-|label|string|
-|hidden|string\_bool|
-|readonly|string\_bool|
-|extraparams|table\<string,string\>|
+| Field Name  | Field Type                 |
+| ----------- | -------------------------- |
+| id          | string                     |
+| command     | string                     |
+| label       | string                     |
+| hidden      | string\\\_bool             |
+| readonly    | string\\\_bool             |
+| extraparams | table\\\<string,string\\\> |
 
 ### Extras:addObjects
 
@@ -36,16 +36,16 @@ New object will be added at the end of the section and will be displayed  as the
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objects|ExtrasObjectBasedClass\|ExtrasObjectBasedClass: List or individual extras object|
-|sectionLabel|string||
+| Parameter    | Type                                                                              | Description |
+| ------------ | --------------------------------------------------------------------------------- | ----------- |
+| objects      | ExtrasObjectBasedClass\\|ExtrasObjectBasedClass: List or individual extras object |             |
+| sectionLabel | string                                                                                         ||
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|cnt|number|Number of objects added|
+| Name | Type   | Description             |
+| ---- | ------ | ----------------------- |
+| cnt  | number | Number of objects added |
 
 ### Extras:getObject
 
@@ -57,15 +57,15 @@ New object will be added at the end of the section and will be displayed  as the
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string|ID of the extras object|
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| id        | string | ID of the extras object |
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|object|ExtrasObjectBasedClass|nil||
+| Name   | Type                   | Description |     |
+| ------ | ---------------------- | ----------- | --- |
+| object | ExtrasObjectBasedClass | nil              ||
 
 ### Extras:updateObject
 
@@ -79,11 +79,11 @@ New object will be added at the end of the section and will be displayed  as the
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objId|string|ID of the extras object|
-|newValue|string|Value to be updated|
-|hide|string\_bool|True or false string|
+| Parameter | Type           | Description             |
+| --------- | -------------- | ----------------------- |
+| objId     | string         | ID of the extras object |
+| newValue  | string         | Value to be updated     |
+| hide      | string\\\_bool | True or false string    |
 
 ### Extras:removeObject
 
@@ -95,15 +95,15 @@ New object will be added at the end of the section and will be displayed  as the
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string|ID of the extras object|
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| id        | string | ID of the extras object |
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|ret|boolean|Returns true if removal was successful|
+| Name | Type    | Description                            |
+| ---- | ------- | -------------------------------------- |
+| ret  | boolean | Returns true if removal was successful |
 
 ### Extras:makeSetupXml
 
@@ -129,9 +129,9 @@ This method makes complete XML string to be send as response to GET\_EXTRAS\_STA
 
 #### Returns:
 
-|Name|Type|
-|---|---|---|
-|xml|string|
+| Name | Type   |
+| ---- | ------ |
+| xml  | string |
 
 ### Extras:sendSetup
 
@@ -154,10 +154,10 @@ This method makes complete XML string to be send as response to GET\_EXTRAS\_STA
 
  Structure that represent a section. Holds section name and ExtrasObject based classes array.
 
-|Field Name|Field Type|
-|---|---|
-|label|string|
-|objects|ExtrasObjectBasedClass]|
+| Field Name | Field Type              |
+| ---------- | ----------------------- |
+| label      | string                  |
+| objects    | ExtrasObjectBasedClass] |
 
 ### ExtrasObjectBasedClass
 
@@ -165,9 +165,9 @@ This method makes complete XML string to be send as response to GET\_EXTRAS\_STA
 
 ##### Type
 
-|Name|Value|
-|---|---|
-|ExtrasObjectBasedClass|ExtrasButton, ExtrasCheckbox  |
+| Name                   | Value                        |
+| ---------------------- | ---------------------------- |
+| ExtrasObjectBasedClass | ExtrasButton, ExtrasCheckbox |
 
 ### string\_bool
 
@@ -175,25 +175,25 @@ This method makes complete XML string to be send as response to GET\_EXTRAS\_STA
 
 ##### Type
 
-|Name|Value|
-|---|---|
-|string\_bool|"true" "false"|
+| Name           | Value          |
+| -------------- | -------------- |
+| string\\\_bool | "true" "false" |
 
 ### Extras
 
  Container class for the ExtrasObject based instances (Button, Checkbox ...) This class is used to hold ExtrasObject based instances and to handle XML assembling and sending. This class handles sections as well as = inheritsFrom(nil)
 
-|Field Name|Field Type|
-|---|---|
-|sections| Section |
-|proxyId|number|
-|has\_extras|boolean|
+| Field Name    | Field Type |
+| ------------- | ---------- |
+| sections      | Section    |
+| proxyId       | number     |
+| has\\\_extras | boolean    |
 
 #### Function Parameters:
 
-|Parameter|Type|
-|---|---|---|
-|proxyId|number|
+| Parameter | Type   |
+| --------- | ------ |
+| proxyId   | number |
 
 ### Extras:addSection
 
@@ -207,15 +207,15 @@ A *Section* table will be initialized and added in the *self.sections* field. Th
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|label|string|Name of the section that will be displayed in the CI|
+| Parameter | Type   | Description                                          |
+| --------- | ------ | ---------------------------------------------------- |
+| label     | string | Name of the section that will be displayed in the CI |
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|ret|boolean|Returns true if insertion was successful|
+| Name | Type    | Description                              |
+| ---- | ------- | ---------------------------------------- |
+| ret  | boolean | Returns true if insertion was successful |
 
 ### Extras:removeSection
 
@@ -230,9 +230,9 @@ the  empty space but the order will not change.
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|sectionLabel|string||
+| Parameter    | Type | Description |
+| ------------ | ---- | ----------- |
+| sectionLabel | string            ||
 
 #### Returns:
 
@@ -249,15 +249,15 @@ the  empty space but the order will not change.
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|sectionLabel|string||
+| Parameter    | Type | Description |
+| ------------ | ---- | ----------- |
+| sectionLabel | string            ||
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|section|Section: nil |
+| Name    | Type         | Description |
+| ------- | ------------ | ----------- |
+| section | Section: nil |             |
 
 ### Extras:changeSection
 
@@ -269,10 +269,10 @@ the  empty space but the order will not change.
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string|ID of the extras object|
-|newSection|string|Name of the new section to put the object|
+| Parameter  | Type   | Description                               |
+| ---------- | ------ | ----------------------------------------- |
+| id         | string | ID of the extras object                   |
+| newSection | string | Name of the new section to put the object |
 
 ### Extras:cleanCapability
 

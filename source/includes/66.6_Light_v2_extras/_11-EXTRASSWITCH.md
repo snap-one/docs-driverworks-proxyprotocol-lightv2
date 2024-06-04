@@ -11,10 +11,10 @@ This class represents an abstraction of the Extras Switch object. The class inte
 
  Class that represent extras switch functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasSwitch = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|\_\_name|Methafield|
+| Field Name   | Field Type |
+| ------------ | ---------- |
+| TYPE         | string     |
+| \\\_\\\_name | Methafield |
 
 ### ExtrasSwitch:construct
 
@@ -26,10 +26,10 @@ This class represents an abstraction of the Extras Switch object. The class inte
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters|For initialization of the base class|
-|value|string|Switch value (true, false) that will be displayed on the button in the CI|
+| Parameter | Type             | Description                                                               |
+| --------- | ---------------- | ------------------------------------------------------------------------- |
+| objParams | ObjectParameters | For initialization of the base class                                      |
+| value     | string           | Switch value (true, false) that will be displayed on the button in the CI |
 
 ### ExtrasSwitch:makeSetupXml
 
@@ -45,6 +45,6 @@ This class represents an abstraction of the Extras Switch object. The class inte
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||

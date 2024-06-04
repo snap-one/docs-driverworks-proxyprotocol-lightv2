@@ -12,10 +12,10 @@ This class represents an abstraction of the Extras Icon object. The class interf
 
  Class that represent extras icon functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasIcon = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|name|Methafield|
+| Field Name | Field Type |
+| ---------- | ---------- |
+| TYPE       | string     |
+| name       | Methafield |
 
 ### ExtrasIcon:construct
 
@@ -27,10 +27,10 @@ This class represents an abstraction of the Extras Icon object. The class interf
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters: For initialization of the base class|
-|value|string|Link or path to the image that will be displayed in the CI|
+| Parameter | Type                                                   | Description                                                |
+| --------- | ------------------------------------------------------ | ---------------------------------------------------------- |
+| objParams | ObjectParameters: For initialization of the base class |                                                            |
+| value     | string                                                 | Link or path to the image that will be displayed in the CI |
 
 ### ExtrasIcon:makeSetupXml
 
@@ -45,6 +45,6 @@ This class represents an abstraction of the Extras Icon object. The class interf
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||

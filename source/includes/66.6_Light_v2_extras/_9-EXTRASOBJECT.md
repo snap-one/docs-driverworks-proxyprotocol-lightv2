@@ -4,14 +4,14 @@
 
  Base class for classes that represent extras objects (button, checkbox ...) Should not create independent instance from this class This class only purpose is to be base class for extras object classesrasObject = inheritsFrom(nil)
 
-|Field Name|Field Type|
-|---|---|
-|id|string|
-|command|string|
-|label|string|
-|hidden|string\_bool|
-|readonly|string\_bool|
-|extraparams|table\<string,string\>|
+| Field Name  | Field Type                 |
+| ----------- | -------------------------- |
+| id          | string                     |
+| command     | string                     |
+| label       | string                     |
+| hidden      | string\\\_bool             |
+| readonly    | string\\\_bool             |
+| extraparams | table\\\<string,string\\\> |
 
 ### ExtrasObject:construct
 
@@ -23,9 +23,9 @@
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters: Table of parameters needed to assemble XML|
+| Parameter | Type                                                         | Description |
+| --------- | ------------------------------------------------------------ | ----------- |
+| objParams | ObjectParameters: Table of parameters needed to assemble XML |             |
 
 ### ExtrasObject:addExtraparam
 
@@ -39,10 +39,10 @@
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string|ID of the extras object that will be connected|
-|name|string|of the extras object that will be connected|
+| Parameter | Type   | Description                                    |
+| --------- | ------ | ---------------------------------------------- |
+| id        | string | ID of the extras object that will be connected |
+| name      | string | of the extras object that will be connected    |
 
 ### ExtrasObject:removeExtraparam
 
@@ -56,9 +56,9 @@
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string||
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| id        | string            ||
 
 ### ExtrasObject:getStateXml
 
@@ -74,9 +74,9 @@
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||
 
 ### ExtrasObject:getExtraparamsXml
 
@@ -92,9 +92,9 @@
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||
 
 ### ExtrasObject:update
 
@@ -116,13 +116,13 @@ ExtrasObject:update(value, hidden)
 
  Class that represent extras slider functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasSlider = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|\_\_name|Methafield|
-|min|number\|string|
-|max|number\|string|
-|resolution|number\|string|
+| Field Name   | Field Type      |
+| ------------ | --------------- |
+| TYPE         | string          |
+| \\\_\\\_name | Methafield      |
+| min          | number\\|string |
+| max          | number\\|string |
+| resolution   | number\\|string |
 
 ## ExtrasSlider:construct
 
@@ -134,10 +134,10 @@ ExtrasObject:update(value, hidden)
 
 ### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters: For initialization of the base class|
-|sliderParams|table\<string,number\|string\>|Table of parameters for the slider functionality|
+| Parameter    | Type                                                   | Description                                      |
+| ------------ | ------------------------------------------------------ | ------------------------------------------------ |
+| objParams    | ObjectParameters: For initialization of the base class |                                                  |
+| sliderParams | table\\\<string,number\\|string\\\>                    | Table of parameters for the slider functionality |
 
 ## ExtrasSlider:makeSetupXml
 
@@ -161,14 +161,14 @@ ExtrasObject:update(value, hidden)
 
  Base class for classes that represent extras objects (button, checkbox ...) Should not create independent instance from this class This class only purpose is to be base class for extras object classesrasObject = inheritsFrom(nil)
 
-|Field Name|Field Type|
-|---|---|
-|id|string|
-|command|string|
-|label|string|
-|hidden|string\_bool|
-|readonly|string\_bool|
-|extraparams|table\<string,string\>|
+| Field Name  | Field Type                 |
+| ----------- | -------------------------- |
+| id          | string                     |
+| command     | string                     |
+| label       | string                     |
+| hidden      | string\\\_bool             |
+| readonly    | string\\\_bool             |
+| extraparams | table\\\<string,string\\\> |
 
 ## ExtrasObject:construct
 
@@ -180,9 +180,9 @@ ExtrasObject:update(value, hidden)
 
 ### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters: Table of parameters needed to assemble XML|
+| Parameter | Type                                                         | Description |
+| --------- | ------------------------------------------------------------ | ----------- |
+| objParams | ObjectParameters: Table of parameters needed to assemble XML |             |
 
 ## ExtrasObject:addExtraparam
 
@@ -196,10 +196,10 @@ ExtrasObject:update(value, hidden)
 
 ### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string|ID of the extras object that will be connected|
-|name|string|of the extras object that will be connected|
+| Parameter | Type   | Description                                    |
+| --------- | ------ | ---------------------------------------------- |
+| id        | string | ID of the extras object that will be connected |
+| name      | string | of the extras object that will be connected    |
 
 ## ExtrasObject:removeExtraparam
 
@@ -213,9 +213,9 @@ ExtrasObject:update(value, hidden)
 
 ### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|id|string||
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| id        | string            ||
 
 ## ExtrasObject:getStateXml
 
@@ -231,9 +231,9 @@ ExtrasObject:update(value, hidden)
 
 ### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||
 
 ## ExtrasObject:getExtraparamsXml
 
@@ -249,9 +249,9 @@ This string should be incorporated in response to GET\_EXTRAS\_SETUP Key and val
 
 ### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||
 
 ## ExtrasObject:update
 
@@ -265,7 +265,7 @@ ExtrasObject:update(value, hidden)
 
 ## Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|value|string|New value for the extras object|
-|hidden|string|Hide the object or not|
+| Parameter | Type   | Description                     |
+| --------- | ------ | ------------------------------- |
+| value     | string | New value for the extras object |
+| hidden    | string | Hide the object or not          |

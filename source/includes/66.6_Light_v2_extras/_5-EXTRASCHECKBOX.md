@@ -12,10 +12,10 @@ This class represents an abstraction of the Extras Checkbox object. The class in
 
  Class that represent extras checkbox functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasCheckbox = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|name| Methafield |
+| Field Name | Field Type |
+| ---------- | ---------- |
+| TYPE       | string     |
+| name       | Methafield |
 
 ### ExtrasCheckbox:construct
 
@@ -27,10 +27,10 @@ This class represents an abstraction of the Extras Checkbox object. The class in
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters | For initialization of the base class|
-|value|string|Checkbox value (true, false) that will be displayed on the button in the CI|
+| Parameter | Type             | Description                                                                 |
+| --------- | ---------------- | --------------------------------------------------------------------------- |
+| objParams | ObjectParameters | For initialization of the base class                                        |
+| value     | string           | Checkbox value (true, false) that will be displayed on the button in the CI |
 
 ### ExtrasCheckbox:makeSetupXml
 
@@ -44,6 +44,6 @@ This class represents an abstraction of the Extras Checkbox object. The class in
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||

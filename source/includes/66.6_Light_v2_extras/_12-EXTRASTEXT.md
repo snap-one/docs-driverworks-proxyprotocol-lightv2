@@ -11,10 +11,10 @@ This class represents an abstraction of the Extras Text object. The class interf
 
 Class that represent extras text functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasText = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|name|Methafield|
+| Field Name | Field Type |
+| ---------- | ---------- |
+| TYPE       | string     |
+| name       | Methafield |
 
 ### ExtrasText:construct
 
@@ -26,10 +26,10 @@ Class that represent extras text functionality. This class is derived from Extra
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters|For initialization of the base class|
-|value|string|Text value that will be displayed on the element in the CI|
+| Parameter | Type             | Description                                                |
+| --------- | ---------------- | ---------------------------------------------------------- |
+| objParams | ObjectParameters | For initialization of the base class                       |
+| value     | string           | Text value that will be displayed on the element in the CI |
 
 ### ExtrasText:makeSetupXml
 
@@ -45,6 +45,6 @@ Class that represent extras text functionality. This class is derived from Extra
 
 #### Returns:
 
-|Name|Type|Description|
-|---|---|---|
-|xml|string||
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| xml  | string            ||

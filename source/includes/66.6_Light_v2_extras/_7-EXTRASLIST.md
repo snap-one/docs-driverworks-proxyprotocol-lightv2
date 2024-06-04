@@ -10,24 +10,24 @@ This class represents an abstraction of the Extras List object. The class interf
 
 ### ExtrasListParameters
 
-|Field Name|Field Type|
-|---|---|
-|value|string|
-|maxSelections|Maximal|
-|minSelections|Minimal|
-|list|table\<string,string\>|
+| Field Name    | Field Type                 |
+| ------------- | -------------------------- |
+| value         | string                     |
+| maxSelections | Maximal                    |
+| minSelections | Minimal                    |
+| list          | table\\\<string,string\\\> |
 
 ### ExtrasList : ExtrasObject
 
  Class that represent extras list functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasList = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|\_\_name|Methafield|
-|maxSelections|number |string|
-|minSelections|number |string|
-|list|table \<string,string\>|
+| Field Name    | Field Type                  |        |
+| ------------- | --------------------------- | :----- |
+| TYPE          | string                      |        |
+| \\\_\\\_name  | Methafield                  |        |
+| maxSelections | number                      | string |
+| minSelections | number                      | string |
+| list          | table \\\<string,string\\\> |        |
 
 ### ExtrasList:construct
 
@@ -39,10 +39,10 @@ This class represents an abstraction of the Extras List object. The class interf
 
 #### Function Parameters:
 
-|Parameter|Description|
-|---|---|
-|objParams|ObjectParameters: For initialization of the base class|
-|ExtrasListParameters|Parameters for initialization of the list|
+| Parameter            | Description                                            |
+| -------------------- | ------------------------------------------------------ |
+| objParams            | ObjectParameters: For initialization of the base class |
+| ExtrasListParameters | Parameters for initialization of the list              |
 
 ### ExtrasList:makeListXml
 
@@ -56,9 +56,9 @@ This class represents an abstraction of the Extras List object. The class interf
 
 #### Returns:
 
-|Name|Type|
-|---|---|---|
-|mxl|string|
+| Name | Type   |
+| ---- | ------ |
+| mxl  | string |
 
 ### ExtrasList:makeSetupXml
 
@@ -72,6 +72,6 @@ This class represents an abstraction of the Extras List object. The class interf
 
 #### Returns:
 
-|Name|Type|
-|---|---|---|
-|xml|string|
+| Name | Type   |
+| ---- | ------ |
+| xml  | string |

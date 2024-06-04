@@ -12,11 +12,11 @@ This class represents an abstraction of the Extras Button object. The class inte
 
 Class that represent extras button functionality. This class is derived from ExtrasObject. Instance of the class can be created independently but will not be displayed alone, it should be added to the instance of the Extras class.rasButton = inheritsFrom(ExtrasObject)
 
-|Field Name|Field Type|
-|---|---|
-|TYPE|string|
-|name|string|
-||text|
+| Field Name | Field Type |
+| ---------- | ---------- |
+| TYPE       | string     |
+| name       | string     |
+|            | text       |
 
 ### ExtrasButton:construct
 
@@ -28,10 +28,10 @@ Class that represent extras button functionality. This class is derived from Ext
 
 #### Function Parameters:
 
-|Parameter|Type|Description|
-|---|---|---|
-|objParams|ObjectParameters|For initialization of the base class|
-|text|string|Button text that will be displayed on the button in the CI|
+| Parameter | Type             | Description                                                |
+| --------- | ---------------- | ---------------------------------------------------------- |
+| objParams | ObjectParameters | For initialization of the base class                       |
+| text      | string           | Button text that will be displayed on the button in the CI |
 
 ### ExtrasButton:makeSetupXml
 
@@ -47,9 +47,9 @@ Class that represent extras button functionality. This class is derived from Ext
 
 #### Returns:
 
-|Name|Type|
-|---|---|
-|xml|string|
+| Name | Type   |
+| ---- | ------ |
+| xml  | string |
 
 ### ExtrasButton:getStateXml
 
@@ -68,6 +68,6 @@ The string will be return in the following command:
 
 #### Returns:
 
-|Name|Type|
-|---|---|
-|xml|string|
+| Name | Type   |
+| ---- | ------ |
+| xml  | string |
