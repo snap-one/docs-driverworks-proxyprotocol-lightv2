@@ -1,4 +1,5 @@
 ## What’s New in 3.3.0
+
 ### Light Proxy Color Enhancements
 This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:
 
