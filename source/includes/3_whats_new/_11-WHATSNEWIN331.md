@@ -11,8 +11,8 @@ The following Conversion Commands have been enhanced to include an optional para
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance
-[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy
-[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv
-[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy
-[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb
+[1]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_trace_tolerance
+[2]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorhsvtoxy
+[3]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorxytohsv
+[4]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorrgbtoxy
+[5]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorxytorgb

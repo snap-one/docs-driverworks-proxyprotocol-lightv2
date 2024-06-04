@@ -10,7 +10,7 @@ HSV functions:
 - [ColorHSVtoXY][3]
 - [ColorXYtoHSV][4]
 
-[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy
-[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb
-[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy
-[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv
+[1]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorrgbtoxy
+[2]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorxytorgb
+[3]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorhsvtoxy
+[4]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands-colorxytohsv
