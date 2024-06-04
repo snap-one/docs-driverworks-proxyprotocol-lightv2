@@ -1,6 +1,4 @@
-## What’s New in 3.3.2
-
-### Light V2 Proxy
+## What was New in 3.3.2
 
 **Capabilities that have been Added**
 

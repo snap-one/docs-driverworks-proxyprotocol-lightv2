@@ -1,9 +1,9 @@
-## What’s New in 3.3.0
+## What was New in 3.3.0
 
 ### Light Proxy Color Enhancements
 This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:
 
-### Light V2 Proxy Capabilities
+### Capabilities
 [color\_correlated\_temperature\_max][1]
 
 [color\_correlated\_temperature\_min][2]
@@ -21,46 +21,42 @@ This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to su
 [supports\_color\_correlated\_temperature][8]
 
 
-### Light V2 Proxy Commands
+###  Commands
 
 [SET\_COLOR\_TARGET][9]
 
 
-### Light V2 Proxy Conversion Commands
+###  Conversion Commands
 
 This section lists the [Commands][10] used for converting to/from hue, saturation and lightness (HSV) and red, blue and green (RGB).
 
 
-### Light V2 Proxy Conditionals
+###  Conditionals
 [IS\_COLOR][11]
 
-### Light v2 Protocol Notifications
+###  Notifications
 [LIGHT\_COLOR\_CHANGED][12]
 
 [LIGHT\_COLOR\_CHANGING][13]
 
 
-### Light V2 Proxy Events
+###  Events
 [light\_color\_changed][14]
 
 [light\_color\_changing][15]
 
 
-### Light V2 Proxy Extras
-
+###  Extras
 New supporting [documentation][16].
 
 
 ### Advanced Lighting Scene Agent 
- 
 New supporting [documentation][17].
+
 
 ### Light Driver Development Best Practices
 A new section has been added to the Light V2 proxy content including [best practice recommendations][18] for light driver developers.
 
-### Audio Video Switch Display Adjustable Bindings
-
-O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][19] that are not being used. This feature has been provided to better manage the UI display within ComposerPro.
 
 
 
@@ -82,4 +78,3 @@ O.S. releases 3.3.0 provides the ability to hide [AV Switch Bindings][19] that a
 [16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library
 [17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent
 [18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices
-[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindings

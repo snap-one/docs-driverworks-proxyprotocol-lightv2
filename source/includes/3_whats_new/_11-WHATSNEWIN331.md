@@ -1,6 +1,4 @@
-## What’s New in 3.3.1
-
-**Light V2 Proxy**
+## What was New in 3.3.1
 
 The capability: [color\_trace\_tolerance][1] has been modified to accept a Delta value of \> .01. When provided, the CIELa*b* tolerance formula is used to determining if a color is the as another color in the system.
 

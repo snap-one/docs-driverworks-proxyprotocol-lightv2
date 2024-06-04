@@ -1,6 +1,4 @@
-## What’s New in 3.4.0
-
-### Light (v2) Proxy
+## What was New in 3.4.0
 
 The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: "custom”. See the links below for more information.
 
