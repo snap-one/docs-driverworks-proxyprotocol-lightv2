@@ -69,7 +69,7 @@ ID=1300. An XML string containing all of the Color Presets that are configured i
 **Color Active Presets**
 ID=1301. An XML string containing all of the presets that are currently active. For UI use only.
 
- ** See example to the right**
+ ** See example below:**
 ```xml
 <active_presets>
    <preset>
@@ -88,7 +88,7 @@ In the example to the right, the origin value indicates if the preset came from 
 ID=6661. An XML string containing the active dynamic capabilities for this light proxy. For UI use Only.
 
 
-** See example to the right**
+** See example below**
 
 ```xml
 <DynamicCapabilities>

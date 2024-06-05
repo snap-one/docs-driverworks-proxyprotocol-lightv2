@@ -11,7 +11,7 @@ This library depends on a driver template. Please, make sure that the driver tem
 
 #### Set Up
 
-The code to the right is an example how to setup the extras library:
+The code below is an example how to setup the extras library:
 
 ```lua
 require "Extas"
@@ -72,7 +72,7 @@ end
 
 To handle changes in extras parameters coming from the device side, the  `updateObject` method can be used. This method updates extras object instance and sends proxy notification that extras status has been changed. Also, each `ExtrasObjectBasedClass` class supports the  `ExtrasObjectBasedClass:update(value, hidden)` method that enables extras update from the class instance directly.
 
-It is nice to create a variable for each extras object, to give the partner opportunity to monitor and take action based on extras states. Sample variable definitions are to the right.
+It is nice to create a variable for each extras object, to give the partner opportunity to monitor and take action based on extras states. Sample variable definitions are below.
 
 ```lua
 --Variable Examples
