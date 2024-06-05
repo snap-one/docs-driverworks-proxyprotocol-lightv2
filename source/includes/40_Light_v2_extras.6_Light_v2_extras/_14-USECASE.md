@@ -113,7 +113,7 @@ To remove the object or the section please use following methods:
 - `Extras:removeSection(sectionLabel)`
 
 This way, you will avoid lost objects (objects that are in section array but will not be displayed because empty index before).
-It is strongly recommended to hide rather than remove objects that will be temporary removed form the CI.
+It is strongly recommended to hide rather than remove objects that will be temporary removed from the CI.
 
 Before destroying an Extras class instance, please use the `Extras:cleanCapability()` method. Also, please pay attention to the Capability section of the documentation.
 
