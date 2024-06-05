@@ -2146,7 +2146,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h3 id='light-v2-commands-delete_driver_-color_-preset-example'>Example</h3>
 
-<p>The example code to the right will remove a Preset with an ID of 3.</p>
+<p>The example code below will remove a Preset with an ID of 3.</p>
 
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">deleteResult</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">SendUIRequest</span><span class="p">(</span><span class="n">proxyDeviceId</span><span class="p">,</span> <span class="s2">"DELETE_DRIVER_COLOR_PRESET"</span><span class="p">,</span> <span class="p">{</span> <span class="n">PRESET_ID</span> <span class="o">=</span> <span class="mi">3</span> <span class="p">}</span> <span class="p">)</span>
 </code></pre></div>
@@ -2753,7 +2753,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h3 id='light-v2-commands-modify_driver_color_preset-example'>Example</h3>
 
-<p>The example code to the right will modify a Color Preset with an ID of 3. </p>
+<p>The example code below will modify a Color Preset with an ID of 3. </p>
 
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span><span class="n">PRESET_ID</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"Modified Driver Color Preset"</span><span class="p">,</span> <span class="n">PRESET_COLOR_X</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">1550</span><span class="p">,</span> <span class="n">PRESET_COLOR_Y</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0822</span><span class="p">,</span> <span class="n">PRESET_COLOR_MODE</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span>
 
@@ -3458,7 +3458,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 </tr>
 </thead><tbody>
 <tr>
-<td>PRESET\\\_NAME</td>
+<td>PRESET\\\\\\\_NAME</td>
 <td>The name to give to the preset that is being added.</td>
 </tr>
 <tr>
@@ -3478,7 +3478,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 <td>This method is highly discouraged as it is confined to the  rRGB gamut and thus can&#39;t achieve many colors that typical color lights support.</td>
 </tr>
 <tr>
-<td>PRESET\\\_COLOR\\\_HUE</td>
+<td>PRESET\\\\\\\_COLOR\\\\\\\_HUE</td>
 <td>The hue to use for this preset.  Range of 0 through 359 degrees. PRESET COLOR SATURATION - The saturation to use for this preset.  Range of 0 to 100.</td>
 </tr>
 </tbody></table>
@@ -3497,7 +3497,7 @@ Beginning with O.S. 3.3.2, Navigators now execute DYNAMIC ON when a light is tur
 
 <h3 id='light-v2-commands-add_driver_color_preset-example'>Example</h3>
 
-<p>The example code to the right adds a preset named &quot;Driver Color Preset&quot; </p>
+<p>The example code below adds a preset named &quot;Driver Color Preset&quot; </p>
 
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{</span><span class="n">PRESET_NAME</span><span class="o">=</span><span class="s2">"Driver Color Preset"</span><span class="p">,</span> <span class="n">PRESET_COLOR_X</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">1500</span><span class="p">,</span> <span class="n">PRESET_COLOR_Y</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0722</span><span class="p">,</span> <span class="n">PRESET_COLOR_MODE</span><span class="o">=</span><span class="mi">1</span><span class="p">}</span>
 
@@ -4492,7 +4492,7 @@ ID=1300. An XML string containing all of the Color Presets that are configured i
 <p><strong>Color Active Presets</strong>
 ID=1301. An XML string containing all of the presets that are currently active. For UI use only.</p>
 
-<p><strong> See example to the right</strong>
+<p><strong> See example below:</strong>
 <code>xml
 &lt;active_presets&gt;
    &lt;preset&gt;
@@ -4508,7 +4508,7 @@ ID=1301. An XML string containing all of the presets that are currently active. 
 <p><strong>Light Dynamic Capabilities</strong>
 ID=6661. An XML string containing the active dynamic capabilities for this light proxy. For UI use Only.</p>
 
-<p><strong> See example to the right</strong></p>
+<p><strong> See example below</strong></p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;DynamicCapabilities&gt;</span>
   <span class="nt">&lt;supports_broadcast_scenes&gt;</span>False<span class="nt">&lt;/supports_broadcast_scenes&gt;</span>
@@ -7255,7 +7255,7 @@ the  empty space but the order will not change.</p>
 <strong>NOTE</strong> Make sure paths are setup correctly</p>
 
 <p><h3 id='light-v2-extras-interface-library-extras-library-use-case-examples-how-to-use-the-library'>How to use the library</h3><h4 id='light-v2-extras-interface-library-extras-library-use-case-examples-how-to-use-the-library-set-up'>Set Up</h4>
-<p>The code to the right is an example how to setup the extras library:</p>
+<p>The code below is an example how to setup the extras library:</p>
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="nb">require</span> <span class="s2">&quot;Extas&quot;</span></p>
 
 <p><span class="k">function</span> <span class="nc">ON_DRIVER_INIT</span><span class="p">.</span><span class="nf">SetupExtras</span><span class="p">()</span>
@@ -7309,7 +7309,7 @@ the  empty space but the order will not change.</p>
 </code></pre></div>
 <p>To handle changes in extras parameters coming from the device side, the  <code>updateObject</code> method can be used. This method updates extras object instance and sends proxy notification that extras status has been changed. Also, each <code>ExtrasObjectBasedClass</code> class supports the  <code>ExtrasObjectBasedClass:update(value, hidden)</code> method that enables extras update from the class instance directly.</p></p>
 
-<p>It is nice to create a variable for each extras object, to give the partner opportunity to monitor and take action based on extras states. Sample variable definitions are to the right.</p>
+<p>It is nice to create a variable for each extras object, to give the partner opportunity to monitor and take action based on extras states. Sample variable definitions are below.</p>
 
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">--Variable Examples</span>
 
