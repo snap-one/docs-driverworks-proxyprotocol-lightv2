@@ -60,21 +60,21 @@ A new section has been added to the Light V2 proxy content including [best pract
 
 
 
-[1]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_correlated_temperature_max
-[2]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_correlated_temperature_min
-[3]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_behavior
-[4]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_max
-[5]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_min
-[6]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_trace_tolerance
-[7]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-supports_color
-[8]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-supports_color_correlated_temperature
-[9]:	hhttps://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_color_target
-[10]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conversion-commands
-[11]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conditionals
-[12]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-protocol-notifications-light_color_changed
-[13]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-protocol-notifications-light_color_changing
-[14]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-events
-[15]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-events
-[16]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-extras-interface-library
-[17]:	https://expert-adventure-1w2nllv.pages.github.io/#advanced-lighting-scene-agent
-[18]:	https://musical-potato-93lyp9g.pages.github.io/#proxy-specific-information-light-proxy-driver-development-best-practices
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_correlated_temperature_max
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_correlated_temperature_min
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_behavior
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_max
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_min
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_trace_tolerance
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-supports_color
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-supports_color_correlated_temperature
+[9]:	hhttps://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_color_target
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-conversion-commands
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-conditionals
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-protocol-notifications-light_color_changed
+[13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-protocol-notifications-light_color_changing
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-events
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-events
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-extras-interface-library
+[17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#advanced-lighting-scene-agent
+[18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#proxy-specific-information-light-proxy-driver-development-best-practices

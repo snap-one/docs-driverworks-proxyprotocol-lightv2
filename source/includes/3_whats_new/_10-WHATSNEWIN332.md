@@ -35,7 +35,7 @@ A new capability: [brightness\_rate\_max][6] has been included in support of dri
 
 A new capability: [brightness\_rate\_min][7] has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold minimum rates.
 
-A new capability: [supports\_brightness\_stop][8] has been included if a light brightness transition can be stopped during a ramp. 
+A new capability: [supports\_brightness\_stop][8] has been included if a light brightness transition can be stopped during a ramp.
 
 
 **Capabilities that have been Deprecated**
@@ -57,11 +57,11 @@ buttons\_are\_virtual
 
 **Commands that have been Added**
 
-Note: Enforcement of valid minimum and maximum values for many Light v2 commands are being enforced in conjunction with 3.3.2. 
+Note: Enforcement of valid minimum and maximum values for many Light v2 commands are being enforced in conjunction with 3.3.2.
 
 A new command: [ADD\_DRIVER\_COLOR\_PRESET][13] has been included to add a new driver specific color preset.
 
-A new command: [DELETE\_DRIVER\_COLOR\_PRESET][14] has been added to remove a driver configured color preset. 
+A new command: [DELETE\_DRIVER\_COLOR\_PRESET][14] has been added to remove a driver configured color preset.
 
 A new command: [DYNAMIC\_OFF][15] has been added to support UIs with an off command to pair with the DYNAMIC\_ON command.
 
@@ -102,11 +102,11 @@ The [SET\_COLOR\_TARGET][32] command has been enhanced with new parameters to su
 
 **Commands that have been Deprecated**
 
-GET\_LIGHT\_LEVEL 
+GET\_LIGHT\_LEVEL
 
-GET\_CONNECTED\_STATE 
+GET\_CONNECTED\_STATE
 
-GET\_PROPERTIES 
+GET\_PROPERTIES
 
 
 **Conditionals that have been Added**
@@ -115,7 +115,7 @@ GET\_PROPERTIES
 
 [IS\_BRIGHTNESS\_TARGET][34]
 
-[IS\_COLOR\_TARGET][35] 
+[IS\_COLOR\_TARGET][35]
 
 
 **Notifications that have been Modified**
@@ -137,7 +137,7 @@ The [LIGHT\_COLOR\_CHANGED][38] notify has been modified to include a parameter 
 
 **Variables that have been Deprecated**
 
-PRESET\_LEVEL has been deprecated as the [brightness\_on\_mode\_preset][41] capability contains this value. 
+PRESET\_LEVEL has been deprecated as the [brightness\_on\_mode\_preset][41] capability contains this value.
 
 **Known Issue(s)**
 
@@ -150,45 +150,45 @@ _Button Link Binding for Brightness Stop Functionality not Working_
 
 A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON\_LINK binding for Brightness Stop from working. This will be resolved in 3.3.3.
 
-[1]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-brightness_on-mode_preset
-[2]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-brightness_on_mode_previous
-[3]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_on_mode_fade
-[4]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_on_mode_preset
-[5]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_on_mode_previous
-[6]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-brightness_rate_max
-[7]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-brightness_rate_min
-[8]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-supports_brightness_stop
-[9]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_min
-[10]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_max
-[11]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_min
-[12]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-color_rate_max
-[13]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-add_driver_color_preset
-[14]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-delete_driver_-color_-preset
-[15]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-dynamic_off
-[16]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-dynamic_on
-[17]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-modify_driver_color_preset
-[18]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_brightness_stop
-[19]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_color_stop
-[20]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_brightness_on_mode
+[1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-brightness_on-mode_preset
+[2]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-brightness_on_mode_previous
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_on_mode_fade
+[4]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_on_mode_preset
+[5]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_on_mode_previous
+[6]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-brightness_rate_max
+[7]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-brightness_rate_min
+[8]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-supports_brightness_stop
+[9]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_min
+[10]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_max
+[11]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_min
+[12]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-color_rate_max
+[13]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-add_driver_color_preset
+[14]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-delete_driver_-color_-preset
+[15]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-dynamic_off
+[16]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-dynamic_on
+[17]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-modify_driver_color_preset
+[18]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_brightness_stop
+[19]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_color_stop
+[20]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_brightness_on_mode
 [21]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default
-[22]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_brightness_rate_default
-[23]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_color_on_mode
-[24]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_color_rate_default
-[25]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-update_color_rate_default
-[26]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-update_brightness_on_mode
-[27]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-update_brightness_rate_default
-[28]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-update_brightness_preset
-[29]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-update_color_on_mode
+[22]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_brightness_rate_default
+[23]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_color_on_mode
+[24]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_color_rate_default
+[25]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-update_color_rate_default
+[26]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-update_brightness_on_mode
+[27]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-update_brightness_rate_default
+[28]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-update_brightness_preset
+[29]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-update_color_on_mode
 [30]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_preset
-[31]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-update_color_rate_default
-[32]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_color_target
-[33]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conditionals
-[34]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conditionals
-[35]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-conditionals
-[36]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-protocol-notifications-light_brightness_changing
-[37]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-protocol-notifications-light_color_changing
-[38]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-protocol-notifications-light_color_changed
-[39]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-variables
-[40]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-variables
-[41]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-capabilities-brightness_on-mode_preset
-[42]:	https://expert-adventure-1w2nllv.pages.github.io/#light-v2-commands-set_color_target
+[31]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-update_color_rate_default
+[32]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_color_target
+[33]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-conditionals
+[34]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-conditionals
+[35]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-conditionals
+[36]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-protocol-notifications-light_brightness_changing
+[37]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-protocol-notifications-light_color_changing
+[38]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-protocol-notifications-light_color_changed
+[39]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-variables
+[40]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-variables
+[41]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-capabilities-brightness_on-mode_preset
+[42]:	https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_color_target
