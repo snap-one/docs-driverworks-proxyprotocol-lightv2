@@ -1,7 +1,7 @@
 
 ## What’s New in 4.2.1
 
-The Light V2 Proxy was modified in conjunction with O.S. Release 4.2.1. This included:
+The Light V2 Proxy was modified in conjunction with O.S. Release 4.2.1. This includes:
 
 ### Capabilities
 The [advanced\_scene\_support ][1]capability has been enhanced to support eh ability of being set dynamically.
