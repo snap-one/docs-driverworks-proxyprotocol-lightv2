@@ -382,6 +382,9 @@
                     <a href="#light-v2-capabilities-set_level" class="toc-h2 toc-link" data-title="set_level">set_level</a>
                   </li>
                   <li>
+                    <a href="#light-v2-capabilities-ramp_level" class="toc-h2 toc-link" data-title="ramp_level">ramp_level</a>
+                  </li>
+                  <li>
                     <a href="#light-v2-capabilities-supports_target" class="toc-h2 toc-link" data-title="supports_target">supports_target</a>
                   </li>
                   <li>
@@ -1204,6 +1207,28 @@ Optionally - These commands were used as workarounds for lights in early Advance
 
 <h3 id='light-v2-capabilities-set_level-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
     <span class="nt">&lt;set_level&gt;</span>false<span class="nt">&lt;/set_level&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h2 id='light-v2-capabilities-ramp_level'>ramp_level</h2>
+<p>Configuration API indicating if the device brightness can be ramped to a level over a given time. Defaults to false.</p>
+
+<p>When true, Composer programming offers the light&#39;s ramp commands, which take a ramp time in milliseconds (for example, <strong>Ramp to Level</strong> and <strong>Ramp to Preset</strong>). When false or omitted, those commands are not offered. The ramp request reaches the driver as <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-commands-set_brightness_target">SET_BRIGHTNESS_TARGET</a> with a RATE.</p>
+
+<p>This capability can also be changed at runtime with <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-lightv2/#light-v2-protocol-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a>.</p>
+<h3 id='light-v2-capabilities-ramp_level-signature'>Signature</h3>
+
+<p><code>&lt;ramp_level&gt;&lt;/ramp_level&gt;</code></p>
+
+<h3 id='light-v2-capabilities-ramp_level-type'>Type</h3>
+
+<p>Boolean</p>
+
+<h3 id='light-v2-capabilities-ramp_level-dynamic-capability'>Dynamic Capability</h3>
+
+<p>Yes</p>
+
+<h3 id='light-v2-capabilities-ramp_level-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;ramp_level&gt;</span>true<span class="nt">&lt;/ramp_level&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 <h2 id='light-v2-capabilities-supports_target'>supports_target</h2>
